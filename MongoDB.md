@@ -184,4 +184,28 @@ db.salles.find({avis: {$size:1}},{_id:1, nom:1})// affiche les salles avec leur 
 
 Exo 5:
 
+db.salles.find({styles: "blues"}, {styles:1})// affiche tous les styles musicaux des salles qui ont du blues
+
+Exo 6:
+
+db.salles.find({"styles.0": "blues"}, {styles:1})//// affiche tous les styles musicaux des salles qui ont du blues en première position. premiere position= "styles.0"
+
+Exo 7:
+
+db.salles.find({ "adresse.codePostal": { $regex: /^84/ }, "capacite": { $lt: 500 } }, { "adresse.ville": 1,}) // ^84= commence par 84. 
+
+Exo 8:
+
+db.salles.find({$or: [{_id: {$mod: [2, 0]}}, {avis: {$exists: false}}]}, {_id: 1}) // Affiche les identifiants des salles qui ont un id pair et ou le champ avis est vide.
+
+Exo 9:
+
+db.salles.find({avis: {$elemMatch: {note: {$gte: 8, $lte: 10}}}}, {nom: 1})// affiche les salles dons au moins un des avis comporte une note entre 8 et 10
+
+Exo 10:
+
+db.salles.find({avis: {$elemMatch: {date: {$gt: new Date('2019-11-15')}}}}, {nom: 1})
+//affiche les salles qui a un avais postérieure au 15/10/2019
+
+
 ```
