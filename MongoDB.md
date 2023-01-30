@@ -192,7 +192,7 @@ db.salles.find({"styles.0": "blues"}, {styles:1})//// affiche tous les styles mu
 
 Exo 7:
 
-db.salles.find({ "adresse.codePostal": { $regex: /^84/ }, "capacite": { $lt: 500 } }, { "adresse.ville": 1,}) // ^84= commence par 84. 
+db.salles.find({ "adresse.codePostal": { $regex: /^84/ }, "capacite": { $lt: 500 } }, { "adresse.ville": 1,}) // ^84= commence par 84. affiche les salles avec un code postal commencent par 84 et qui on une capacité supérieur a 500 places.
 
 Exo 8:
 
