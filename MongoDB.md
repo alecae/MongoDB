@@ -207,5 +207,38 @@ Exo 10:
 db.salles.find({avis: {$elemMatch: {date: {$gt: new Date('2019-11-15')}}}}, {nom: 1})
 //affiche les salles qui a un avais postérieure au 15/10/2019
 
+Exo 11:
 
+db.salles.find({$expr: {$gt: [{$multiply: [100, "$_id"]}, "$capacite"]}},{"nom": 1, "capacite": 1}) //affiche le nom est la capacité des salles dont le produit de la valeur de l'id par 100 est supérieur a la capacité. $expr va comparé les champs d'un meme document.
+
+Exo 12 :
+
+
+
+
+```
+
+
+Index: un index répertorie les mots les plus souvent utilisés et important  pour les retrouver plus facilement au lieux d'aller les chercher dans toutes les pages. Mais l'index peut aussi ralentir la suppresion et la modification .
+
+Exemple indexsimple:
+``` js
+db.collection.createIndex(<champ_et_type>), <options>)
+
+db.personnes.createIndex({"age": -1})
+```
+
+il existe un moyen de consulter la liste des index d'une collection :
+``` js
+db.personnes.getIndexes()
+
+```
+
+pour supprimer un index il suffit d'effectuer la commande suivante:
+``` js
+db.personnes.dropIndex("age_1_")
+
+db.personnes.createIndex({"age":-1}, {"name":"superNom"})
+
+db.personnes.createIndex({"prenom": 1}, {"background": true})
 ```
