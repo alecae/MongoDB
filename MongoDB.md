@@ -300,3 +300,15 @@ db.personnes.find({interets: {$size:2}})//affiche les personnes avec 2 hobbies d
 
 db.personnes.find({"interets.1": {$exists: 1}})//affiche les personnes avec 2 interets
 ```
+
+Exo Index
+```js
+db.salles.createIndex({"adresse.codePostal":1 , "capacite":1})// on créé l'index pour les champs "adresse.codePostal" et "capacite" 
+
+db.salles.dropIndex({"adresse.codePostal":1, "capacite":1})// Ceci va détruire l'index que nous avons fait juste au dessus 
+```
+
+Exo validation
+```js
+
+```
