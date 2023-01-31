@@ -213,6 +213,44 @@ db.salles.find({$expr: {$gt: [{$multiply: [100, "$_id"]}, "$capacite"]}},{"nom":
 
 Exo 12 :
 
+db.salles.find({ smac: true, $where: "this.styles.length > 2"}, { nom: 1, _id: 0 })//affiche le noms des salles de tyeps smac qui programment plus de 2 types de musiques différents
+
+Exo 13 :  
+
+db.salles.distinct("adresse.codePostal")//affiche les différents codes postaux. distincts sert a ne pas mettre plusieurs fois le meme code postal
+
+Exo 14 :
+
+db.salles.updateMany({}, {$inc: {capacite: 100}})//incrémente 100 a la capacité de chaque salles
+
+Exo 15 :
+
+db.salles.updateMany({styles: {$exists: false}}, {$push: {styles: "jazz"}})//ajoute style jazz au salles qui n'en font pas 
+
+
+Exo 16 :
+
+db.salles.updateMany({_id: {$nin: [2, 3]}}, {$pull: {"styles": "funk"}});// retire le style funk aus salles qui ont un identifiant different a 2 et 3. $nin= diférent
+
+Exo 17 : 
+
+db.salles.update( { _id: 3 }, { $push: { styles: { $each: ["techno", "reggae"] } } } )//trouve la salle avec comment identifiant 3 est ajoute les styles techno et reaggae
+
+Exo 18 :
+
+db.salles.updateMany({nom: /^P/i}, {$inc: {capacite: 150}, $set: {contact: [{telephone: "04 11 94 00 10"}]}})//LEs salles qui commence par P (i= majuscule ou minuscules) alors augmenter capacite de 150 et on ajoute un champ de typa tableau(contact) dans lequel on met le champ telephone avec une valeur predefinis
+
+Exo 19 :
+
+db.salles.update({nom: {$regex: '[^aeiou]+$'}}, {$push: {avis: {date: new Date(), note: NumberInt(10)}}})//Met a jour les salles qui commence par une voyelle est rajoute dans le tableau avis un doc composé du champ date est note qui vaux 10. elle cherche aussi une chaine de caracterequi débute par une voyelle suivi de [^aeiou]+$
+
+Exo 20 :
+
+db.salles.updateMany({nom: {$regex: /^[zZ]/ } }, {$set: {nom: "Pub Z", capacite: 50, smac: false}}, {upsert: true})
+
+//upsert= met a jour ci il existe et le créé ci il existe pas. Met a jour les docs dont le nom commence par z ou Z et leur affecte Pub Z, une capacité de 50 et le champ smac la valeur false.
+
+Exo 21 :
 
 
 
@@ -241,4 +279,24 @@ db.personnes.dropIndex("age_1_")
 db.personnes.createIndex({"age":-1}, {"name":"superNom"})
 
 db.personnes.createIndex({"prenom": 1}, {"background": true})
+```
+
+les opérateurs de tableaux
+``` js
+{$push:{ <champ>: valeur,...}}
+```
+
+L'opérateur "push" permet d'ajouter une ou plusieurs valeurs au sein d'un tableau
+
+```js
+db.hobbies.updateOne({"_id": 1}, {$push : {"passions": "le roller"}})
+
+db.hobbies.updateOne({"_id": 2}, {$addToSet: {"passions":{$each: ["Minecreaft", "Rise of Kingdom"]}}})
+
+
+db.personnes.find({"interets": {$all: ["bridge","jardinage" ]}})// rechercher tous ceux qui ont jardinage et bridge 
+
+db.personnes.find({interets: {$size:2}})//affiche les personnes avec 2 hobbies differents
+
+db.personnes.find({"interets.1": {$exists: 1}})//affiche les personnes avec 2 interets
 ```
