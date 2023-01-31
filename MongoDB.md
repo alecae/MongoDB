@@ -91,7 +91,7 @@ MongoDB apporteses propres types a ceux rencontrés au sein du format JSON stand
 
 On peut utiliser "use" pour se connecter a une BDD qui n'existe pas. l'insertion du premier document va entrainer la creation de la BDD
 
-```
+```json
 Bash
 
 Use top
@@ -108,16 +108,12 @@ Vous remarquez l'utilisation du mot clé  'db' il s'agit du mot clé quirenvoie
 La combinaison 'db.uneCollection' constitue ce qu'on appelle un namespace en mongoDB
 
 Suppression d'une base de données :
-```
-
-usenaDB
-
+```json
 Db.dropsDataBase()
 ```
 
 Pour vérifier utiliser la commande :
-```
-
+```json
 show dbs
 ```
 
@@ -131,7 +127,7 @@ adminCommand()
 
 pour créer une collection il suffit d'entrer 
 
-```
+```json
 db.creationCollection(
 "maCollection",
 {"collation": {
@@ -142,7 +138,7 @@ db.creationCollection(
 
 
 EXOBOOK
-``` js
+``` json
 
 use sample_db//créé data base
 
@@ -164,7 +160,7 @@ db.employees.updateMany({job: "Developer"},{$set:{salary:80000}})// changer sala
 ```
 
 EXO
-``` js
+``` json
 
 Exo 1:
 
@@ -260,14 +256,14 @@ Exo 21 :
 Index: un index répertorie les mots les plus souvent utilisés et important  pour les retrouver plus facilement au lieux d'aller les chercher dans toutes les pages. Mais l'index peut aussi ralentir la suppresion et la modification .
 
 Exemple indexsimple:
-``` js
+``` json
 db.collection.createIndex(<champ_et_type>), <options>)
 
 db.personnes.createIndex({"age": -1})
 ```
 
 il existe un moyen de consulter la liste des index d'une collection :
-``` js
+``` json
 db.personnes.getIndexes()
 
 ```
@@ -282,13 +278,13 @@ db.personnes.createIndex({"prenom": 1}, {"background": true})
 ```
 
 les opérateurs de tableaux
-``` js
+``` json
 {$push:{ <champ>: valeur,...}}
 ```
 
 L'opérateur "push" permet d'ajouter une ou plusieurs valeurs au sein d'un tableau
 
-```js
+```json
 db.hobbies.updateOne({"_id": 1}, {$push : {"passions": "le roller"}})
 
 db.hobbies.updateOne({"_id": 2}, {$addToSet: {"passions":{$each: ["Minecreaft", "Rise of Kingdom"]}}})
@@ -302,13 +298,91 @@ db.personnes.find({"interets.1": {$exists: 1}})//affiche les personnes avec 2 in
 ```
 
 Exo Index
-```js
+```json
 db.salles.createIndex({"adresse.codePostal":1 , "capacite":1})// on créé l'index pour les champs "adresse.codePostal" et "capacite" 
 
 db.salles.dropIndex({"adresse.codePostal":1, "capacite":1})// Ceci va détruire l'index que nous avons fait juste au dessus 
 ```
 
 Exo validation
-```js
+```json
+Exo 1:
 
+db.runCommand({collMod: "salles", validator: { $jsonSchema: { bsonType: "object", required: ["nom", "capacite", "adresse.ville", "adresse.codePostal"], properties: { nom: { bsonType: "string", description: "Doit être de type chaine de caractères et il est obligatoire" }, capacite: { bsonType: "int", description: "Doit être un int et est obligatoire" }, adresse: { bsonType: "object", required: ["ville", "codePostal"], properties: { ville: { bsonType: "string", description: "Doit être de type chaine de caractères et il est obligatoire" }, codePostal: { bsonType: "string", description: "Doit être de type chaine de caractères et il est obligatoire" } } } } } } })
+
+//La tentative d'insertion ne marche pas parce qu'il n'y a pas le code postal dedans.il faudrait faire cela pour que sa marche :
+
+db.salles.insertOne({"nom": "Super salle", "capacite": 1500, "adresse":{"ville": "Musiqueville", "codePostal": "01600"}})
+
+Exo 2:
+
+//Si on tente de le mettre à jour il va y avoir une erreur de validation car le champs verifie ne fait pas parti du schéma de validation.
+
+db.runCommand({ collMod: "salles", validationLevel: "off" });//Ceci va supprimer les criteres ajoutés
+
+Exo 3:
+
+db.runCommand({ collMod: "salles", validationLevel: "strict", validator: { $or: [ {smac: {$exists: true}}, {stylesMusicaux: {$in: ["jazz", "soul", "funk", "blues"]}} ] } })// permet de rajouter au critere de validation : champs smac présent OU les styles musicaux doivent figurer parmi les suivants 
+
+
+
+
+```
+
+
+Les requetes geospatiales
+```json
+{type <type d'objet GeoJSON>, coordinates: <coordonnes>}
+```
+
+Le type Point
+```json
+{"type": "Point","coordinates": [18.0, 1.0]}
+```
+
+le type Multipoint
+```json
+{"type": "Multipoint", "coordinate": [13.0, 1.0], [13.0, 3.0]}
+```
+
+Le type LineString
+```json
+{"type": "LineString", "coordinate": [13.0, 1.0], [13.0, 3.0]}
+```
+
+Le type Polyon
+```json
+{"type": "Polyon", "coordinate": [[[13.0, 1.0] ,[13.0, 3.0]], [[13.0, 1.0], [13.0, 3.0]]]
+```
+
+Création d'index :
+
+```json
+db.avignon.createIndex({"localisation" : "2dsphere"})
+
+db.avignon.createIndex({"localisation" : "2d"})
+```
+
+L'opérateur $nearSphere :
+
+```json
+{
+    $nearSphere : {
+        $geometry : {
+            type : "Point",
+            coordinates : [<longitude>, <latitude>]
+        },
+        $minDistance : <distance en mètres>
+        $maxDistance : <distance en mètre>
+    }
+}
+
+var opera = { type : "Point", coordinates : [43.949749, 4.805325]}
+```
+
+Effectuer une requete sur la collection avignon
+
+```json
+var opera = { type : "Point", coordinates : [43.949749, 4.805325]}
+    db.avignon.find({"localisation" : {$nearSphere : { $geometry : opera}}}, {"_id" : 0, "nom" : 1}).explain()
 ```
