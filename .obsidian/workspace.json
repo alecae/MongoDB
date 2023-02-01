@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "c8d242b375e026e7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MongoDB.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -146,8 +159,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6d96d962e3b8f2f3",
+  "active": "c8d242b375e026e7",
   "lastOpenFiles": [
+    "Eval MongoDB.md",
     "MongoDB.md"
   ]
 }

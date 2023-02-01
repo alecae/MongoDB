@@ -138,7 +138,7 @@ db.creationCollection(
 
 
 EXOBOOK
-``` json
+``` js
 
 use sample_db//créé data base
 
@@ -160,7 +160,7 @@ db.employees.updateMany({job: "Developer"},{$set:{salary:80000}})// changer sala
 ```
 
 EXO
-``` json
+``` js
 
 Exo 1:
 
@@ -256,16 +256,15 @@ Exo 21 :
 Index: un index répertorie les mots les plus souvent utilisés et important  pour les retrouver plus facilement au lieux d'aller les chercher dans toutes les pages. Mais l'index peut aussi ralentir la suppresion et la modification .
 
 Exemple indexsimple:
-``` json
+``` js
 db.collection.createIndex(<champ_et_type>), <options>)
 
 db.personnes.createIndex({"age": -1})
 ```
 
 il existe un moyen de consulter la liste des index d'une collection :
-``` json
+``` js
 db.personnes.getIndexes()
-
 ```
 
 pour supprimer un index il suffit d'effectuer la commande suivante:
@@ -278,13 +277,13 @@ db.personnes.createIndex({"prenom": 1}, {"background": true})
 ```
 
 les opérateurs de tableaux
-``` json
+``` js
 {$push:{ <champ>: valeur,...}}
 ```
 
 L'opérateur "push" permet d'ajouter une ou plusieurs valeurs au sein d'un tableau
 
-```json
+```js
 db.hobbies.updateOne({"_id": 1}, {$push : {"passions": "le roller"}})
 
 db.hobbies.updateOne({"_id": 2}, {$addToSet: {"passions":{$each: ["Minecreaft", "Rise of Kingdom"]}}})
@@ -298,14 +297,14 @@ db.personnes.find({"interets.1": {$exists: 1}})//affiche les personnes avec 2 in
 ```
 
 Exo Index
-```json
+```js
 db.salles.createIndex({"adresse.codePostal":1 , "capacite":1})// on créé l'index pour les champs "adresse.codePostal" et "capacite" 
 
 db.salles.dropIndex({"adresse.codePostal":1, "capacite":1})// Ceci va détruire l'index que nous avons fait juste au dessus 
 ```
 
 Exo validation
-```json
+```js
 Exo 1:
 
 db.runCommand({collMod: "salles", validator: { $jsonSchema: { bsonType: "object", required: ["nom", "capacite", "adresse.ville", "adresse.codePostal"], properties: { nom: { bsonType: "string", description: "Doit être de type chaine de caractères et il est obligatoire" }, capacite: { bsonType: "int", description: "Doit être un int et est obligatoire" }, adresse: { bsonType: "object", required: ["ville", "codePostal"], properties: { ville: { bsonType: "string", description: "Doit être de type chaine de caractères et il est obligatoire" }, codePostal: { bsonType: "string", description: "Doit être de type chaine de caractères et il est obligatoire" } } } } } } })
@@ -386,3 +385,62 @@ Effectuer une requete sur la collection avignon
 var opera = { type : "Point", coordinates : [43.949749, 4.805325]}
     db.avignon.find({"localisation" : {$nearSphere : { $geometry : opera}}}, {"_id" : 0, "nom" : 1}).explain()
 ```
+
+Exo GEO:
+
+```json
+var requete = { "adresses.ville": "Nîmes", "musiquesProgrammees": { $in: ["Blues", "Soul"] }, "adresses.location": { $geoWithin: { $centerSphere: [ [salles.adresses.location.coordinates[0], salles.adresses.location.coordinates[1]], KilometresEnRadians(60) ] } } }; db.salles.find(requete, { "nom": 1 });
+
+```
+
+Le framework d'agregation : Mongodb met a disposition un puissant outil d'analyse et de traitement de l'information : le pipeline d'agregation(ou framework) Metaphore du tapis roulant d'usine / traitement du document telle le tapis roulant Methode utilisée :
+
+```
+db.collection.aggregate(pipeline, options)
+```
+
+pipeline = designe un tableau d'etapes options = designe un document Parmis les options, nous retiendrons : -collation, permet d'affecter une collation a l'operation d'agregation -bypassDocumentValidation : fonctionne avec un opérateur appelé $out et permet de passer au travers de la validation des docs. -allowDiskuse : donne la possibilité de faire deborder les operations d'ecriture sur le disque. Vous pouvez appeler aggregate sans argument :
+
+```
+db.personnes.aggregate()
+```
+
+Au sein du shell, nous allons créer une variable pipeline :
+
+```js
+var pipeline = {}
+db.personnes.aggregate(pipeline)
+db.personnes.aggregate(
+pipeline,
+{
+    "collation" : {
+        "locale" : "fr"
+    }
+}
+)
+```
+
+Le filtrage avec $match : Cela permet d'obtenr des pipelines performants avec des temps d'execution courts. Normalement $match doit intervenir le plus en amont possible dans le pipeline car $match agit comme un filtre en reduisant le nombre de document a traiter plus en aval dans le pipeline. (Dans l'ideal on devrait le trouver comme premier operateur) La syntaxe est la suivante :
+
+```
+    {$match : {<requete>}}
+```
+
+```
+var pipeline = [{
+    $match : {
+        "interets" : "jardinage"
+    }
+}
+]
+db.personnes.aggregate(pipeline)
+```
+
+Cela correspond à la requete
+
+```
+db.personnes.find({"interets" : "jardinage"})
+```
+
+
+![[Pasted image 20230201151506.png]]
