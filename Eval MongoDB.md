@@ -108,7 +108,8 @@ mongoexport --uri mongodb+srv://Alex:VPvVFqNKEnxo4aJr@cluster0.vavbcfc.mongodb.n
 
 export colelction resto:
 ```
-mongoexport --uri mongodb+srv://Alex:VPvVFqNKEnxo4aJr@cluster0.vavbcfc.mongodb.net/?retryWrites=true --db EvalDB --collection resto --csv --out resto.csv --fields restaurantName,location,type,coordinates,rating,numberOfRatings,numberOfComments
+mongoexport --uri mongodb+srv://Alex:VPvVFqNKEnxo4aJr@cluster0.vavbcfc.mongodb.net/?retryWrites=true --db EvalDB --collection resto --csv --out resto.csv --fields   
+name,opening_hours,close_hours,close_min,rating,_id
 ```
 
 

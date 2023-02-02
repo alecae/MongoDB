@@ -1,305 +1,305 @@
-restaurantName,location,type,coordinates,rating,numberOfRatings,numberOfComments
-,,,,4.8,,
-,,,,4.8,,
-,,,,4.7,,
-,,,,4.7,,
-,,,,4.8,,
-,,,,4.8,,
-,,,,4.8,,
-,,,,4.8,,
-,,,,4.8,,
-,,,,4.7,,
-,,,,4.7,,
-,,,,4.7,,
-,,,,4.7,,
-,,,,4.8,,
-,,,,4.7,,
-,,,,4.7,,
-,,,,4.8,,
-,,,,4.7,,
-,,,,4.8,,
-,,,,4.7,,
-,,,,4.8,,
-,,,,4.7,,
-,,,,4.8,,
-,,,,4.7,,
-,,,,4.7,,
-,,,,4.9,,
-,,,,4.7,,
-,,,,4.8,,
-,,,,4.5,,
-,,,,4.8,,
-,,,,4.8,,
-,,,,4.8,,
-,,,,4.8,,
-,,,,4.7,,
-,,,,4.9,,
-,,,,4.8,,
-,,,,4.7,,
-,,,,0,,
-,,,,4.7,,
-,,,,4.7,,
-,,,,4.9,,
-,,,,4.9,,
-,,,,4.7,,
-,,,,4.8,,
-,,,,4.8,,
-,,,,4.8,,
-,,,,4.6,,
-,,,,4.8,,
-,,,,4.8,,
-,,,,4.9,,
-,,,,4.8,,
-,,,,3.0,,
-,,,,1.0,,
-,,,,4.8,,
-,,,,5.0,,
-,,,,2.0,,
-,,,,4.7,,
-,,,,1.0,,
-,,,,5.0,,
-,,,,3.0,,
-,,,,3.0,,
-,,,,1.0,,
-,,,,4.0,,
-,,,,2.0,,
-,,,,5.0,,
-,,,,4.0,,
-,,,,3.0,,
-,,,,1.0,,
-,,,,4.0,,
-,,,,1.0,,
-,,,,3.0,,
-,,,,3.0,,
-,,,,4.0,,
-,,,,2.0,,
-,,,,2.0,,
-,,,,1.0,,
-,,,,5.0,,
-,,,,1.0,,
-,,,,5.0,,
-,,,,3.0,,
-,,,,5.0,,
-,,,,3.0,,
-,,,,3.0,,
-,,,,3.0,,
-,,,,4.0,,
-,,,,4.0,,
-,,,,2.0,,
-,,,,2.0,,
-,,,,5.0,,
-,,,,1.0,,
-,,,,3.0,,
-,,,,2.0,,
-,,,,5.0,,
-,,,,5.0,,
-,,,,2.0,,
-,,,,4.0,,
-,,,,2.0,,
-,,,,1.0,,
-,,,,2.0,,
-,,,,4.0,,
-,,,,3.0,,
-,,,,3.0,,
-,,,,2.0,,
-,,,,2.0,,
-,,,,1.0,,
-,,,,2.0,,
-,,,,5.0,,
-,,,,4.0,,
-,,,,4.0,,
-,,,,1.0,,
-,,,,2.0,,
-,,,,4.0,,
-,,,,4.0,,
-,,,,1.0,,
-,,,,5.0,,
-,,,,3.0,,
-,,,,1.0,,
-,,,,1.0,,
-,,,,3.0,,
-,,,,4.0,,
-,,,,4.0,,
-,,,,4.0,,
-,,,,2.0,,
-,,,,1.0,,
-,,,,4.0,,
-,,,,4.0,,
-,,,,3.0,,
-,,,,1.0,,
-,,,,5.0,,
-,,,,2.0,,
-,,,,5.0,,
-,,,,2.0,,
-,,,,3.0,,
-,,,,3.0,,
-,,,,4.0,,
-,,,,4.0,,
-,,,,5.0,,
-,,,,3.0,,
-,,,,2.0,,
-,,,,1.0,,
-,,,,4.0,,
-,,,,2.0,,
-,,,,3.0,,
-,,,,5.0,,
-,,,,3.0,,
-,,,,1.0,,
-,,,,2.0,,
-,,,,1.0,,
-,,,,5.0,,
-,,,,3.0,,
-,,,,4.0,,
-,,,,5.0,,
-,,,,3.0,,
-,,,,4.0,,
-,,,,4.0,,
-,,,,3.0,,
-,,,,3.0,,
-,,,,5.0,,
-,,,,3.0,,
-,,,,3.0,,
-,,,,3.0,,
-,,,,5.0,,
-,,,,2.0,,
-,,,,3.0,,
-,,,,3.0,,
-,,,,2.0,,
-,,,,2.0,,
-,,,,3.0,,
-,,,,2.0,,
-,,,,2.0,,
-,,,,5.0,,
-,,,,1.0,,
-,,,,3.0,,
-,,,,4.0,,
-,,,,3.0,,
-,,,,1.0,,
-,,,,3.0,,
-,,,,1.0,,
-,,,,5.0,,
-,,,,3.0,,
-,,,,4.0,,
-,,,,1.0,,
-,,,,2.0,,
-,,,,2.0,,
-,,,,5.0,,
-,,,,1.0,,
-,,,,3.0,,
-,,,,3.0,,
-,,,,5.0,,
-,,,,1.0,,
-,,,,2.0,,
-,,,,5.0,,
-,,,,1.0,,
-,,,,4.0,,
-,,,,3.0,,
-,,,,4.0,,
-,,,,2.0,,
-,,,,4.0,,
-,,,,5.0,,
-,,,,4.0,,
-,,,,5.0,,
-,,,,5.0,,
-,,,,3.0,,
-,,,,3.0,,
-,,,,4.0,,
-,,,,2.0,,
-,,,,2.0,,
-,,,,3.0,,
-,,,,2.0,,
-,,,,3.0,,
-,,,,3.0,,
-,,,,2.0,,
-,,,,4.0,,
-,,,,3.0,,
-,,,,3.0,,
-,,,,3.0,,
-,,,,5.0,,
-,,,,5.0,,
-,,,,3.0,,
-,,,,5.0,,
-,,,,1.0,,
-,,,,3.0,,
-,,,,5.0,,
-,,,,5.0,,
-,,,,3.0,,
-,,,,3.0,,
-,,,,2.0,,
-,,,,4.0,,
-,,,,2.0,,
-,,,,5.0,,
-,,,,5.0,,
-,,,,1.0,,
-,,,,4.0,,
-,,,,2.0,,
-,,,,3.0,,
-,,,,1.0,,
-,,,,2.0,,
-,,,,2.0,,
-,,,,2.0,,
-,,,,3.0,,
-,,,,2.0,,
-,,,,5.0,,
-,,,,5.0,,
-,,,,2.0,,
-,,,,2.0,,
-,,,,4.0,,
-,,,,2.0,,
-,,,,1.0,,
-,,,,1.0,,
-,,,,5.0,,
-,,,,1.0,,
-,,,,2.0,,
-,,,,2.0,,
-,,,,1.0,,
-,,,,4.0,,
-,,,,3.0,,
-,,,,4.0,,
-,,,,5.0,,
-,,,,4.0,,
-,,,,2.0,,
-,,,,3.0,,
-,,,,2.0,,
-,,,,2.0,,
-,,,,2.0,,
-,,,,4.0,,
-,,,,5.0,,
-,,,,4.0,,
-,,,,1.0,,
-,,,,4.0,,
-,,,,3.0,,
-,,,,4.0,,
-,,,,5.0,,
-,,,,2.0,,
-,,,,1.0,,
-,,,,1.0,,
-,,,,1.0,,
-,,,,2.0,,
-,,,,5.0,,
-,,,,3.0,,
-,,,,4.0,,
-,,,,5.0,,
-,,,,2.0,,
-,,,,2.0,,
-,,,,3.0,,
-,,,,5.0,,
-,,,,5.0,,
-,,,,5.0,,
-,,,,2.0,,
-,,,,5.0,,
-,,,,5.0,,
-,,,,4.0,,
-,,,,3.0,,
-,,,,3.0,,
-,,,,1.0,,
-,,,,3.0,,
-,,,,5.0,,
-,,,,5.0,,
-,,,,2.0,,
-,,,,1.0,,
-,,,,1.0,,
-,,,,1.0,,
-,,,,1.0,,
-,,,,3.0,,
-,,,,5.0,,
+name,opening_hours,close_hours,close_min,rating,_id
+La Tomate Noire,10:43,22,43,4.8,ObjectId(63db961f3acf6dca968f343d)
+L'instant,10:31,19,40,4.8,ObjectId(63db961f3acf6dca968f343e)
+La Braisière,12:40,20,34,4.7,ObjectId(63db961f3acf6dca968f343f)
+IL était une fois,12:35,23,30,4.7,ObjectId(63db961f3acf6dca968f3440)
+Fenotte Traiteur,10:48,21,33,4.8,ObjectId(63db961f3acf6dca968f3441)
+La Cuisine au Beurre,10:36,20,32,4.8,ObjectId(63db961f3acf6dca968f3442)
+Restaurant les Artistes,10:37,18,48,4.8,ObjectId(63db961f3acf6dca968f3443)
+La Trattoria de Saint-Jean,12:39,21,40,4.8,ObjectId(63db961f3acf6dca968f3444)
+La Barquette,12:38,18,34,4.8,ObjectId(63db961f3acf6dca968f3445)
+Café Bichette,10:48,20,47,4.7,ObjectId(63db961f3acf6dca968f3446)
+Oh My Chef,10:45,19,48,4.7,ObjectId(63db961f3acf6dca968f3447)
+Le Bistro d'Ailhon,11:33,23,42,4.7,ObjectId(63db961f3acf6dca968f3448)
+Le Kohatu,11:38,23,42,4.7,ObjectId(63db961f3acf6dca968f3449)
+Meet the Meat Kanteen,12:36,19,46,4.8,ObjectId(63db961f3acf6dca968f344a)
+LiveStation DIY,11:38,18,43,4.7,ObjectId(63db961f3acf6dca968f344b)
+Restaurant Mordus,11:31,18,33,4.7,ObjectId(63db961f3acf6dca968f344c)
+L'Atelier des Augustins,12:50,18,45,4.8,ObjectId(63db961f3acf6dca968f344d)
+Fred & Co,11:40,21,33,4.7,ObjectId(63db961f3acf6dca968f344e)
+Le jardin intérieur,11:50,20,44,4.8,ObjectId(63db961f3acf6dca968f344f)
+Le Trait d'Union,12:43,21,49,4.7,ObjectId(63db961f3acf6dca968f3450)
+La Gratinée,11:35,21,39,4.8,ObjectId(63db961f3acf6dca968f3451)
+Bistrot Berthet,10:46,22,38,4.7,ObjectId(63db961f3acf6dca968f3452)
+Les Mauvaises Herbes,12:45,21,36,4.8,ObjectId(63db961f3acf6dca968f3453)
+Le Bruit Qui Court,12:40,20,41,4.7,ObjectId(63db961f3acf6dca968f3454)
+L'uni vert,11:41,23,34,4.7,ObjectId(63db961f3acf6dca968f3455)
+Le Simone's Café,11:35,20,48,4.9,ObjectId(63db961f3acf6dca968f3456)
+La Marmite de Marmotte,12:41,22,47,4.7,ObjectId(63db961f3acf6dca968f3457)
+Ourea,10:46,22,47,4.8,ObjectId(63db961f3acf6dca968f3458)
+Mon Rêve,12:50,22,45,4.5,ObjectId(63db961f3acf6dca968f3459)
+Au Quai de l'Ill,12:30,18,50,4.8,ObjectId(63db961f3acf6dca968f345a)
+La Baratte XV sur Vin,12:39,21,38,4.8,ObjectId(63db961f3acf6dca968f345b)
+Côté Grange,12:36,20,50,4.8,ObjectId(63db961f3acf6dca968f345c)
+Aux Petits Oignons,12:50,21,37,4.8,ObjectId(63db961f3acf6dca968f345d)
+La Cantine Arkose Genevois,11:40,22,37,4.7,ObjectId(63db961f3acf6dca968f345e)
+La Grange de la Vallée,12:30,21,37,4.9,ObjectId(63db961f3acf6dca968f345f)
+Cafétaria Paul Ricœur,12:48,23,36,4.8,ObjectId(63db961f3acf6dca968f3460)
+La Petite Épicerie,11:45,20,46,4.7,ObjectId(63db961f3acf6dca968f3461)
+La Lune,11:33,21,39,0,ObjectId(63db961f3acf6dca968f3462)
+Au Coin du Fleuve,12:37,21,41,4.7,ObjectId(63db961f3acf6dca968f3463)
+La Brasserie,12:34,19,43,4.7,ObjectId(63db961f3acf6dca968f3464)
+Les ateliers gourmands,12:30,20,38,4.9,ObjectId(63db961f3acf6dca968f3465)
+Le resto du coin,10:36,22,47,4.9,ObjectId(63db961f3acf6dca968f3466)
+Chez Félix,12:46,23,35,4.7,ObjectId(63db961f3acf6dca968f3467)
+Les Semailles,11:38,23,39,4.8,ObjectId(63db961f3acf6dca968f3468)
+La Piscine,11:45,19,46,4.8,ObjectId(63db961f3acf6dca968f3469)
+Hataya,11:44,18,32,4.8,ObjectId(63db961f3acf6dca968f346a)
+La Véranda,10:39,23,43,4.6,ObjectId(63db961f3acf6dca968f346b)
+L'Alouette,10:35,20,41,4.8,ObjectId(63db961f3acf6dca968f346c)
+Le Broc Lille-Centre,10:42,20,38,4.8,ObjectId(63db961f3acf6dca968f346d)
+Le Bistrot des Quais,12:36,22,32,4.9,ObjectId(63db961f3acf6dca968f346e)
+Les Bistronautes,10:38,23,42,4.8,ObjectId(63db961f3acf6dca968f346f)
+fou de fafa,10:43,21,35,3.0,ObjectId(63db961f3acf6dca968f3470)
+Chez Nous,12:31,20,47,1.0,ObjectId(63db961f3acf6dca968f3471)
+L'Eden,11:49,23,40,4.8,ObjectId(63db961f3acf6dca968f3472)
+La part thé,10:30,18,48,5.0,ObjectId(63db961f3acf6dca968f3473)
+Café du Palais,11:31,22,31,2.0,ObjectId(63db961f3acf6dca968f3474)
+Ô Tablier,10:33,20,34,4.7,ObjectId(63db961f3acf6dca968f3475)
+La Terrasse,12:31,20,37,1.0,ObjectId(63db961f3acf6dca968f3476)
+Regain,10:30,19,44,5.0,ObjectId(63db961f3acf6dca968f3477)
+Le chat parti,12:45,21,45,3.0,ObjectId(63db961f3acf6dca968f3478)
+Tout Feu Tout Flame,11:46,23,40,3.0,ObjectId(63db961f3acf6dca968f3479)
+Jolis Gestes,11:30,23,33,1.0,ObjectId(63db961f3acf6dca968f347a)
+La Cafetière Fêlée,11:33,19,37,4.0,ObjectId(63db961f3acf6dca968f347b)
+CODA,10:46,22,37,2.0,ObjectId(63db961f3acf6dca968f347c)
+L'Art Terre,10:47,22,45,5.0,ObjectId(63db961f3acf6dca968f347d)
+La Veyrie,11:40,18,33,4.0,ObjectId(63db961f3acf6dca968f347e)
+La Commune,11:49,19,49,3.0,ObjectId(63db961f3acf6dca968f347f)
+Le Président,10:44,20,39,1.0,ObjectId(63db961f3acf6dca968f3480)
+La Prairie Mimosa,10:44,20,40,4.0,ObjectId(63db961f3acf6dca968f3481)
+AM (Alexandre Mazzia),10:42,22,45,1.0,ObjectId(63db961f3acf6dca968f3482)
+Salad&Co,11:47,20,47,3.0,ObjectId(63db961f3acf6dca968f3483)
+À Côté,12:46,23,47,3.0,ObjectId(63db961f3acf6dca968f3484)
+Le cintra,11:49,21,49,4.0,ObjectId(63db961f3acf6dca968f3485)
+Le Sâotico,11:38,18,48,2.0,ObjectId(63db961f3acf6dca968f3486)
+Beau Rêve,11:46,22,34,2.0,ObjectId(63db961f3acf6dca968f3487)
+La Ferme à Dédé,11:46,22,31,1.0,ObjectId(63db961f3acf6dca968f3488)
+El Theatris,11:38,20,49,5.0,ObjectId(63db961f3acf6dca968f3489)
+Farmers Organic,12:46,22,44,1.0,ObjectId(63db961f3acf6dca968f348a)
+Taste,11:34,22,50,5.0,ObjectId(63db961f3acf6dca968f348b)
+Jules & John,10:43,20,38,3.0,ObjectId(63db961f3acf6dca968f348c)
+L'Acoudé,11:44,19,49,5.0,ObjectId(63db961f3acf6dca968f348d)
+Le Gramophone,10:35,18,39,3.0,ObjectId(63db961f3acf6dca968f348e)
+Maison Aribert,10:32,23,32,3.0,ObjectId(63db961f3acf6dca968f348f)
+La Cantine du Voyage,10:37,18,50,3.0,ObjectId(63db961f3acf6dca968f3490)
+Le Phare,12:42,20,41,4.0,ObjectId(63db961f3acf6dca968f3491)
+Versus,11:38,18,40,4.0,ObjectId(63db961f3acf6dca968f3492)
+Ô mouton à 5 pattes,10:43,21,46,2.0,ObjectId(63db961f3acf6dca968f3493)
+Tiffany’s kitchen,10:40,23,32,2.0,ObjectId(63db961f3acf6dca968f3494)
+Au Grain de sel,10:34,18,35,5.0,ObjectId(63db961f3acf6dca968f3495)
+Loupika,11:41,19,33,1.0,ObjectId(63db961f3acf6dca968f3496)
+Le Jardin,10:33,21,49,3.0,ObjectId(63db961f3acf6dca968f3497)
+L'armoire à délices,10:48,19,41,2.0,ObjectId(63db961f3acf6dca968f3498)
+The Robin Room,11:44,18,39,5.0,ObjectId(63db961f3acf6dca968f3499)
+Le Hangar 34,10:31,22,43,5.0,ObjectId(63db961f3acf6dca968f349a)
+Cave la Bourgogne,10:38,23,32,2.0,ObjectId(63db961f3acf6dca968f349b)
+Les Brassés,11:33,23,42,4.0,ObjectId(63db961f3acf6dca968f349c)
+Avanti,10:48,20,34,2.0,ObjectId(63db961f3acf6dca968f349d)
+La Petite Marmite,12:46,23,43,1.0,ObjectId(63db961f3acf6dca968f349e)
+Paprika,10:36,19,49,2.0,ObjectId(63db961f3acf6dca968f349f)
+Les Piétonnes,10:50,18,49,4.0,ObjectId(63db961f3acf6dca968f34a0)
+Le Raphaël,12:33,21,48,3.0,ObjectId(63db961f3acf6dca968f34a1)
+Biotifull,11:49,23,41,3.0,ObjectId(63db961f3acf6dca968f34a2)
+Le Sissebisse,12:47,21,39,2.0,ObjectId(63db961f3acf6dca968f34a3)
+"Madame, table de cheffe",11:42,18,44,2.0,ObjectId(63db961f3acf6dca968f34a4)
+Fred et Co,12:44,18,48,1.0,ObjectId(63db961f3acf6dca968f34a5)
+Restaurant Universitaire Rabelais,12:50,19,30,2.0,ObjectId(63db961f3acf6dca968f34a6)
+L'Assiette du Vin,12:36,22,50,5.0,ObjectId(63db961f3acf6dca968f34a7)
+La couronne d'or,11:40,20,49,4.0,ObjectId(63db961f3acf6dca968f34a8)
+Café Ella,12:43,21,43,4.0,ObjectId(63db961f3acf6dca968f34a9)
+Le Goût du jour,12:49,20,33,1.0,ObjectId(63db961f3acf6dca968f34aa)
+A la gare,12:38,21,34,2.0,ObjectId(63db961f3acf6dca968f34ab)
+Flam's,11:31,21,31,4.0,ObjectId(63db961f3acf6dca968f34ac)
+Toké Sathonay,11:48,23,33,4.0,ObjectId(63db961f3acf6dca968f34ad)
+L'Amiral,12:45,20,48,1.0,ObjectId(63db961f3acf6dca968f34ae)
+Aux 2 anges,12:44,18,45,5.0,ObjectId(63db961f3acf6dca968f34af)
+Le comptoir Cecil Restaurant,10:40,23,50,3.0,ObjectId(63db961f3acf6dca968f34b0)
+Le Bistrot Parisien,11:45,19,39,1.0,ObjectId(63db961f3acf6dca968f34b1)
+L'Essentiel,12:37,21,43,1.0,ObjectId(63db961f3acf6dca968f34b2)
+Au Bureau,12:48,18,30,3.0,ObjectId(63db961f3acf6dca968f34b3)
+L'Allée Fleurie,11:45,18,38,4.0,ObjectId(63db961f3acf6dca968f34b4)
+La Petite Bouffe,10:47,19,36,4.0,ObjectId(63db961f3acf6dca968f34b5)
+La Gratinée,12:48,23,47,4.0,ObjectId(63db961f3acf6dca968f34b6)
+La Focaccia,11:42,20,44,2.0,ObjectId(63db961f3acf6dca968f34b7)
+Le Trésor,11:40,20,46,1.0,ObjectId(63db961f3acf6dca968f34b8)
+Restaurant du Jardin de l'abbaye de Valsaintes,11:42,18,30,4.0,ObjectId(63db961f3acf6dca968f34b9)
+Pie Noir café,12:35,19,48,4.0,ObjectId(63db961f3acf6dca968f34ba)
+Le Clos des Chefs,11:44,21,48,3.0,ObjectId(63db961f3acf6dca968f34bb)
+Octopussy,10:44,21,36,1.0,ObjectId(63db961f3acf6dca968f34bc)
+Rest’Otentik,11:35,23,50,5.0,ObjectId(63db961f3acf6dca968f34bd)
+Little Kitchen,12:42,19,48,2.0,ObjectId(63db961f3acf6dca968f34be)
+Brasserie Le Belena,10:30,20,35,5.0,ObjectId(63db961f3acf6dca968f34bf)
+Le Petit Ours Gourmand,10:33,22,44,2.0,ObjectId(63db961f3acf6dca968f34c0)
+Ancien Hotel Baudy,10:45,19,31,3.0,ObjectId(63db961f3acf6dca968f34c1)
+Le Grapillon,12:33,19,43,3.0,ObjectId(63db961f3acf6dca968f34c2)
+Given,10:46,21,40,4.0,ObjectId(63db961f3acf6dca968f34c3)
+Belle Isle,11:45,20,38,4.0,ObjectId(63db961f3acf6dca968f34c4)
+Chez Angèle,12:32,21,41,5.0,ObjectId(63db961f3acf6dca968f34c5)
+A Côté Le Bistro,10:32,18,46,3.0,ObjectId(63db961f3acf6dca968f34c6)
+BREIZH Café - Odéon,11:38,21,48,2.0,ObjectId(63db961f3acf6dca968f34c7)
+B-52,10:44,22,49,1.0,ObjectId(63db961f3acf6dca968f34c8)
+La Planxa,12:49,19,34,4.0,ObjectId(63db961f3acf6dca968f34c9)
+L'Absinthe,12:40,20,32,2.0,ObjectId(63db961f3acf6dca968f34ca)
+Ben et Suzette,11:43,18,33,3.0,ObjectId(63db961f3acf6dca968f34cb)
+Restaurant Brasserie Le Shamrock,10:40,19,34,5.0,ObjectId(63db961f3acf6dca968f34cc)
+Villa René Lalique,11:48,20,31,3.0,ObjectId(63db961f3acf6dca968f34cd)
+Au Bureau,12:39,22,48,1.0,ObjectId(63db961f3acf6dca968f34ce)
+De Rode Koe,12:30,21,37,2.0,ObjectId(63db961f3acf6dca968f34cf)
+Za,11:37,23,33,1.0,ObjectId(63db961f3acf6dca968f34d0)
+L'Orangerie,11:35,19,33,5.0,ObjectId(63db961f3acf6dca968f34d1)
+Juste Leblanc,12:48,23,38,3.0,ObjectId(63db961f3acf6dca968f34d2)
+Aïda Restaurant,11:42,21,37,4.0,ObjectId(63db961f3acf6dca968f34d3)
+La Casserole,10:38,21,36,5.0,ObjectId(63db961f3acf6dca968f34d4)
+Meraki,11:33,20,44,3.0,ObjectId(63db961f3acf6dca968f34d5)
+L'Achille,12:37,21,48,4.0,ObjectId(63db961f3acf6dca968f34d6)
+La Comédie,10:31,20,39,4.0,ObjectId(63db961f3acf6dca968f34d7)
+Coin-Op Table,11:44,23,41,3.0,ObjectId(63db961f3acf6dca968f34d8)
+Chez Marco,11:32,20,32,3.0,ObjectId(63db961f3acf6dca968f34d9)
+Chez Loic,12:42,20,42,5.0,ObjectId(63db961f3acf6dca968f34da)
+Le Galopin,12:48,20,39,3.0,ObjectId(63db961f3acf6dca968f34db)
+Le Végétarium,10:47,22,46,3.0,ObjectId(63db961f3acf6dca968f34dc)
+La Robe de la Girafe,11:45,23,36,3.0,ObjectId(63db961f3acf6dca968f34dd)
+Crêperie Penn ar Bed,10:43,22,46,5.0,ObjectId(63db961f3acf6dca968f34de)
+MYDY,10:47,20,31,2.0,ObjectId(63db961f3acf6dca968f34df)
+La Belle Ferme,12:33,19,30,3.0,ObjectId(63db961f3acf6dca968f34e0)
+Kozy Kanope,10:47,21,37,3.0,ObjectId(63db961f3acf6dca968f34e1)
+La Récré,11:48,22,36,2.0,ObjectId(63db961f3acf6dca968f34e2)
+Le Ferrière,10:30,22,34,2.0,ObjectId(63db961f3acf6dca968f34e3)
+Rambo,11:31,18,48,3.0,ObjectId(63db961f3acf6dca968f34e4)
+L'Arpège,10:48,22,33,2.0,ObjectId(63db961f3acf6dca968f34e5)
+Esprit Domus,12:37,20,34,2.0,ObjectId(63db961f3acf6dca968f34e6)
+Le Par Azar,12:30,19,36,5.0,ObjectId(63db961f3acf6dca968f34e7)
+Papill',11:41,21,31,1.0,ObjectId(63db961f3acf6dca968f34e8)
+Harmony Café,12:47,23,37,3.0,ObjectId(63db961f3acf6dca968f34e9)
+La Taverne,11:34,21,49,4.0,ObjectId(63db961f3acf6dca968f34ea)
+Chez Pierrot,10:47,20,35,3.0,ObjectId(63db961f3acf6dca968f34eb)
+Le Bistrot à Gilles,10:40,18,34,1.0,ObjectId(63db961f3acf6dca968f34ec)
+L'Omaha,11:47,21,47,3.0,ObjectId(63db961f3acf6dca968f34ed)
+Cargo Culte,12:43,19,41,1.0,ObjectId(63db961f3acf6dca968f34ee)
+Auberge du Port,12:42,18,34,5.0,ObjectId(63db961f3acf6dca968f34ef)
+L'Heure Bleue,10:45,22,45,3.0,ObjectId(63db961f3acf6dca968f34f0)
+Les Beatnik Modernes,12:49,19,43,4.0,ObjectId(63db961f3acf6dca968f34f1)
+Le Rustic,10:34,22,47,1.0,ObjectId(63db961f3acf6dca968f34f2)
+Caramel & Oxalis,10:45,19,37,2.0,ObjectId(63db961f3acf6dca968f34f3)
+Le Castelet,12:50,22,47,2.0,ObjectId(63db961f3acf6dca968f34f4)
+Flunch,11:37,22,42,5.0,ObjectId(63db961f3acf6dca968f34f5)
+Petit pois & Déli,11:46,20,30,1.0,ObjectId(63db961f3acf6dca968f34f6)
+Restaurant du Lieu Unique,11:33,18,36,3.0,ObjectId(63db961f3acf6dca968f34f7)
+L'Arbre à Thé,12:33,21,40,3.0,ObjectId(63db961f3acf6dca968f34f8)
+La Cloche,10:49,22,30,5.0,ObjectId(63db961f3acf6dca968f34f9)
+LuS'in,11:43,19,38,1.0,ObjectId(63db961f3acf6dca968f34fa)
+L'Épuisette,12:30,23,39,2.0,ObjectId(63db961f3acf6dca968f34fb)
+cApVerb,10:49,18,30,5.0,ObjectId(63db961f3acf6dca968f34fc)
+Restaurant Universitaire du Lieu de Vie,11:44,19,32,1.0,ObjectId(63db961f3acf6dca968f34fd)
+Le Jardin de Montreuil,11:33,21,42,4.0,ObjectId(63db961f3acf6dca968f34fe)
+L'Epicier Grand Cru,11:49,19,40,3.0,ObjectId(63db961f3acf6dca968f34ff)
+L'Oustaù de Baumanière,10:46,18,41,4.0,ObjectId(63db961f3acf6dca968f3500)
+Le Bistrot des Belles Caves,12:40,21,41,2.0,ObjectId(63db961f3acf6dca968f3501)
+Restaurant Universitaire Gémini,10:30,19,50,4.0,ObjectId(63db961f3acf6dca968f3502)
+La Pampa,11:39,20,47,5.0,ObjectId(63db961f3acf6dca968f3503)
+Mieline,11:49,22,50,4.0,ObjectId(63db961f3acf6dca968f3504)
+Les Canailleries du Marché,12:31,22,31,5.0,ObjectId(63db961f3acf6dca968f3505)
+Le Comptoir Nature,10:31,23,45,5.0,ObjectId(63db961f3acf6dca968f3506)
+"Horus Hotel, Bar, Restaurant et Karaokés",11:36,21,44,3.0,ObjectId(63db961f3acf6dca968f3507)
+Le Lieu Commun,11:36,20,36,3.0,ObjectId(63db961f3acf6dca968f3508)
+Lili & Marcel,10:33,23,37,4.0,ObjectId(63db961f3acf6dca968f3509)
+Courtepaille,12:47,23,32,2.0,ObjectId(63db961f3acf6dca968f350a)
+,10:47,18,34,2.0,ObjectId(63db961f3acf6dca968f350b)
+Au Bureau Orléans,12:35,22,38,3.0,ObjectId(63db961f3acf6dca968f350c)
+La Rotisserie,12:46,20,34,2.0,ObjectId(63db961f3acf6dca968f350d)
+Auberge Lou Castagnou,11:31,21,48,3.0,ObjectId(63db961f3acf6dca968f350e)
+Restaurant l'Agopé,11:34,19,41,3.0,ObjectId(63db961f3acf6dca968f350f)
+Le Panier du Chef,12:44,19,41,2.0,ObjectId(63db961f3acf6dca968f3510)
+Berthus,10:36,20,44,4.0,ObjectId(63db961f3acf6dca968f3511)
+L'Authentique Sophia,12:36,22,46,3.0,ObjectId(63db961f3acf6dca968f3512)
+Bartholomé,11:46,18,30,3.0,ObjectId(63db961f3acf6dca968f3513)
+Et pourquoi pas ?,12:43,18,32,3.0,ObjectId(63db961f3acf6dca968f3514)
+Barbich,10:44,19,40,5.0,ObjectId(63db961f3acf6dca968f3515)
+Flunch,10:40,22,31,5.0,ObjectId(63db961f3acf6dca968f3516)
+Maison Villemanzy,11:43,23,48,3.0,ObjectId(63db961f3acf6dca968f3517)
+Le 52,10:37,22,32,5.0,ObjectId(63db961f3acf6dca968f3518)
+Le Bolton Food Café,11:48,18,36,1.0,ObjectId(63db961f3acf6dca968f3519)
+L'épicurieux,12:46,20,44,3.0,ObjectId(63db961f3acf6dca968f351a)
+La Cantine des Filles,10:40,19,49,5.0,ObjectId(63db961f3acf6dca968f351b)
+L'arrière pays,12:42,18,49,5.0,ObjectId(63db961f3acf6dca968f351c)
+Oh my bear,10:42,19,45,3.0,ObjectId(63db961f3acf6dca968f351d)
+La Fabrik,11:36,22,38,3.0,ObjectId(63db961f3acf6dca968f351e)
+Pouzenc,10:42,18,49,2.0,ObjectId(63db961f3acf6dca968f351f)
+Restaurant Pastel,12:32,21,36,4.0,ObjectId(63db961f3acf6dca968f3520)
+Au Bureau,10:35,20,39,2.0,ObjectId(63db961f3acf6dca968f3521)
+L'Éléphant du Nil,10:36,23,35,5.0,ObjectId(63db961f3acf6dca968f3522)
+Maison Colbert,12:48,20,34,5.0,ObjectId(63db961f3acf6dca968f3523)
+cadence,11:31,19,48,1.0,ObjectId(63db961f3acf6dca968f3524)
+Ti Clémentine,12:39,22,37,4.0,ObjectId(63db961f3acf6dca968f3525)
+Mama Trotter,11:41,19,32,2.0,ObjectId(63db961f3acf6dca968f3526)
+La petite marche,11:34,19,45,3.0,ObjectId(63db961f3acf6dca968f3527)
+Le 466,12:40,18,49,1.0,ObjectId(63db961f3acf6dca968f3528)
+La Folle Horloge,11:36,22,43,2.0,ObjectId(63db961f3acf6dca968f3529)
+Timothy,10:40,19,38,2.0,ObjectId(63db961f3acf6dca968f352a)
+Bouillon Croix-Rousse,11:43,22,34,2.0,ObjectId(63db961f3acf6dca968f352b)
+Le Havre,10:35,19,30,3.0,ObjectId(63db961f3acf6dca968f352c)
+The Winter Garden,10:47,22,36,2.0,ObjectId(63db961f3acf6dca968f352d)
+La Forge Café,10:47,18,40,5.0,ObjectId(63db961f3acf6dca968f352e)
+Chez Elisabeth,11:44,22,44,5.0,ObjectId(63db961f3acf6dca968f352f)
+Le Chalet,11:40,21,37,2.0,ObjectId(63db961f3acf6dca968f3530)
+Méjane,12:31,23,34,2.0,ObjectId(63db961f3acf6dca968f3531)
+"Le Bistrot des Prés Verts, Bar à vins - Restaurant - Salon de thé",11:35,21,42,4.0,ObjectId(63db961f3acf6dca968f3532)
+WhiteFields Café,12:35,22,35,2.0,ObjectId(63db961f3acf6dca968f3533)
+Le lion et l’agneau,11:46,18,30,1.0,ObjectId(63db961f3acf6dca968f3534)
+Macoha,12:43,19,45,1.0,ObjectId(63db961f3acf6dca968f3535)
+Villa Food House,11:36,22,42,5.0,ObjectId(63db961f3acf6dca968f3536)
+La Petite Auberge,12:36,19,43,1.0,ObjectId(63db961f3acf6dca968f3537)
+Gaudi Café,12:33,22,34,2.0,ObjectId(63db961f3acf6dca968f3538)
+La Verrière,11:45,22,45,2.0,ObjectId(63db961f3acf6dca968f3539)
+Les Pieds dans le Plat,11:47,21,43,1.0,ObjectId(63db961f3acf6dca968f353a)
+Le Sémaphore,12:47,18,31,4.0,ObjectId(63db961f3acf6dca968f353b)
+Flunch,12:39,23,50,3.0,ObjectId(63db961f3acf6dca968f353c)
+La Terrasse des Archives,12:43,20,49,4.0,ObjectId(63db961f3acf6dca968f353d)
+ROND - Sarrazin et Calvados,11:30,22,30,5.0,ObjectId(63db961f3acf6dca968f353e)
+C'est ici,11:39,18,42,4.0,ObjectId(63db961f3acf6dca968f353f)
+Brasserie Hurons,11:36,21,47,2.0,ObjectId(63db961f3acf6dca968f3540)
+La crêperie de Xavier,11:34,22,39,3.0,ObjectId(63db961f3acf6dca968f3541)
+Le Verre Siffleur,10:39,20,44,2.0,ObjectId(63db961f3acf6dca968f3542)
+Restaurant Fantin Latour,11:38,21,38,2.0,ObjectId(63db961f3acf6dca968f3543)
+Empreinte,12:47,21,31,2.0,ObjectId(63db961f3acf6dca968f3544)
+Luz'in,10:30,19,45,4.0,ObjectId(63db961f3acf6dca968f3545)
+Flunch,10:42,21,49,5.0,ObjectId(63db961f3acf6dca968f3546)
+Restaurant universitaire le Castel'RU,11:45,18,45,4.0,ObjectId(63db961f3acf6dca968f3547)
+Piccadilly Circus,11:42,22,46,1.0,ObjectId(63db961f3acf6dca968f3548)
+Le Roman des Saveurs,12:47,21,43,4.0,ObjectId(63db961f3acf6dca968f3549)
+Cui Lu Cru,11:46,20,33,3.0,ObjectId(63db961f3acf6dca968f354a)
+Les Impressionnistes,10:49,23,48,4.0,ObjectId(63db961f3acf6dca968f354b)
+La bicheTrot,11:36,22,49,5.0,ObjectId(63db961f3acf6dca968f354c)
+La Bravade,10:42,22,46,2.0,ObjectId(63db961f3acf6dca968f354d)
+Moustache et Béret,11:30,19,39,1.0,ObjectId(63db961f3acf6dca968f354e)
+Le Temps des Mets,10:30,21,35,1.0,ObjectId(63db961f3acf6dca968f354f)
+Chez Marion,11:47,19,48,1.0,ObjectId(63db961f3acf6dca968f3550)
+O'Grand Breton,10:35,20,33,2.0,ObjectId(63db961f3acf6dca968f3551)
+Chez Jazz,10:33,22,38,5.0,ObjectId(63db961f3acf6dca968f3552)
+Le Haricot Rouge,11:35,18,34,3.0,ObjectId(63db961f3acf6dca968f3553)
+La Morlière,12:47,22,44,4.0,ObjectId(63db961f3acf6dca968f3554)
+M. Georges,10:38,19,40,5.0,ObjectId(63db961f3acf6dca968f3555)
+Les 3 Brasseurs,10:45,19,31,2.0,ObjectId(63db961f3acf6dca968f3556)
+Le Café Curieux,12:30,22,42,2.0,ObjectId(63db961f3acf6dca968f3557)
+Le Mandala,11:44,22,42,3.0,ObjectId(63db961f3acf6dca968f3558)
+La Table de Flore,10:34,21,49,5.0,ObjectId(63db961f3acf6dca968f3559)
+Substrat,11:47,20,44,5.0,ObjectId(63db961f3acf6dca968f355a)
+Crêperie Saint-Louis,11:48,18,38,5.0,ObjectId(63db961f3acf6dca968f355b)
+L'Herberie Les 3 Chemins,12:46,22,39,2.0,ObjectId(63db961f3acf6dca968f355c)
+L'Âme des Poètes,12:36,22,50,5.0,ObjectId(63db961f3acf6dca968f355d)
+Courtepaille,10:40,22,49,5.0,ObjectId(63db961f3acf6dca968f355e)
+Auberge de Moneaux,12:35,21,49,4.0,ObjectId(63db961f3acf6dca968f355f)
+Le Bessoi,12:38,20,34,3.0,ObjectId(63db961f3acf6dca968f3560)
+La Maison Montreuil,11:44,20,40,3.0,ObjectId(63db961f3acf6dca968f3561)
+Capucine et Gaston,11:35,23,45,1.0,ObjectId(63db961f3acf6dca968f3562)
+Les Dunes,12:44,21,46,3.0,ObjectId(63db961f3acf6dca968f3563)
+Arsène,11:43,21,40,5.0,ObjectId(63db961f3acf6dca968f3564)
+La Petite Cuillère,12:32,22,40,5.0,ObjectId(63db961f3acf6dca968f3565)
+L'Alsacien,11:42,19,36,2.0,ObjectId(63db961f3acf6dca968f3566)
+La plage,12:36,19,33,1.0,ObjectId(63db961f3acf6dca968f3567)
+Le Pic Vert,12:48,20,46,1.0,ObjectId(63db961f3acf6dca968f3568)
+L’Insolite,12:38,22,46,1.0,ObjectId(63db961f3acf6dca968f3569)
+Le Fût-Mets,10:35,19,31,1.0,ObjectId(63db961f3acf6dca968f356a)
+La Grange,12:33,20,46,3.0,ObjectId(63db961f3acf6dca968f356b)
+Jardin des Arts,10:47,23,49,5.0,ObjectId(63db961f3acf6dca968f356c)
