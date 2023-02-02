@@ -3,29 +3,29 @@ Evaluation:
 
 filtre dataset resto: restaurant français végétarien
 
-Cette requete a été utilisée pour importer la base de donnée dans Atlas:
+Cette requête a été utilisée pour importer la base de données dans Atlas:
 
 ```
 mongoimport --db EvalDB --collection resto --file restaurant.json --jsonArray mongodb+srv://Alex:VPvVFqNKEnxo4aJr@cluster0.vavbcfc.mongodb.net/?retryWrites=true
 ```
 
-A. Rechercher les restaurant qui sont ouverts a partir de 18h00.
+A. Rechercher les restaurants qui sont ouverts à partir de 18h00.
 
 ```js
 db.resto.find({"close_hours": { $gt: "18" } }).projection({name: 1, close_hours: 1})
 ```
 
-Cette requete va faire apparaitre tous les restaurant qui commence a partir de 18h00.
+Cette requête va faire apparaitre tous les restaurants qui commencent à partir de 18h00.
 
 Résultat:
 ![[Pasted image 20230202100159.png]]
 
-B.trié les restaurtant avec leur notes du plus petit au plus grand
+B.Trié les restaurants avec leurs notes du plus petit au plus grand
 ```js
 db.resto.find({}, {name: 1, rating: 1}).sort({rating: -1})
 ```
 
-cette requette permet d'afficher les restaurant est de les classé par note par ordre décroissant
+Cette requête permet d'afficher les restaurant est de les classer par notes par ordre décroissant.
 
 Résultat:
 ![[Pasted image 20230202095550.png]]
@@ -38,9 +38,9 @@ B. Créé un index
 db.resto.createIndex( { name: 1, opening_hours: 1 } )
 ```
 
-Cette requette a permis de créé un index. L'index contient les champs name et opening_hours
+Cette requête a permis de créer un index. L'index contient les champs name et opening_hours
 
-Pour voir ci l'index a bien été créé on utilise la commande suivante:
+Pour voir si l'index a bien été créé on utilise la commande suivante:
 ```js
 db.runCommand({listIndexes: "resto"})
 ```
@@ -49,12 +49,11 @@ Résultat:
 
 ![[Pasted image 20230202101610.png]]
 
-La requete nous a bien renvoyé l'index que nous avons créé.
+La requête nous a bien renvoyé l'index que nous avons créé.
 
 
 
-Requêtes géospatiales
-
+Requêtes géospatiales:
 
 dataset utilisé : locations
 
@@ -62,7 +61,7 @@ index féospatiale
 ```js
 db.locations.createIndex({ location: "2dsphere" })
 ```
-
+ Permet de créé un index pour pouvoir utilisé $near
 
 ```js
 db.locations.find({ location: { $near: { $geometry: { type: "Point", coordinates: [48.865770, 2.341780] }, $maxDistance: 2000 } } })
@@ -78,7 +77,7 @@ vg vbv
 ```js
 db.locations.aggregate([ { $group: { _id: null, averageRating: { $avg: "$rating" } } } ])
 ```
-Cette requete permet de calculer la moyenne des restaurants 
+Cette requête permet de calculer la moyenne des restaurants 
 
 Résultat
 ![[Pasted image 20230202123623.png]]
@@ -94,7 +93,10 @@ Résultat:
 Export:
 
 export en Json
+```
 mongoexport --uri=mongodb+srv://Alex:VPvVFqNKEnxo4aJr@cluster0.vavbcfc.mongodb.net/EvalDB --collection=resto  --out=resto.json
+```
+Ceci ma permis d'exporter le dataset en json et de faire des modifications et ensuite de le re-importer.
 
 export en CSV
 
@@ -112,5 +114,5 @@ mongoexport --uri mongodb+srv://Alex:VPvVFqNKEnxo4aJr@cluster0.vavbcfc.mongodb.n
 name,opening_hours,close_hours,close_min,rating,_id
 ```
 
-
+C'est deux requêtes m'ont permis d'exporter mes datasets en fichier Csv et aussi de choisir les colonnes à exporter
 
