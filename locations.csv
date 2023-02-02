@@ -1,0 +1,4 @@
+restaurantName,location,type,coordinates,rating,numberOfRatings,numberOfComments
+Le Jardin,"{""type"":""Point"",""coordinates"":[48.86507,2.34124]}",,,4.5,200,150
+La Table,"{""type"":""Point"",""coordinates"":[48.86214,2.33679]}",,,4,150,100
+Le Comptoir,"{""type"":""Point"",""coordinates"":[48.86577,2.34178]}",,,4.3,175,125

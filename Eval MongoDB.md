@@ -1,20 +1,18 @@
 
 Evaluation:
 
-filtre dataset: restaurant français végétarien
+filtre dataset resto: restaurant français végétarien
 
-Cette reqeute a été utilisée pour importer la base de donnée dans Atlas:
+Cette requete a été utilisée pour importer la base de donnée dans Atlas:
 
-```json
+```
 mongoimport --db EvalDB --collection resto --file restaurant.json --jsonArray mongodb+srv://Alex:VPvVFqNKEnxo4aJr@cluster0.vavbcfc.mongodb.net/?retryWrites=true
 ```
 
 A. Rechercher les restaurant qui sont ouverts a partir de 18h00.
 
-```json
-
+```js
 db.resto.find({"close_hours": { $gt: "18" } }).projection({name: 1, close_hours: 1})
-
 ```
 
 Cette requete va faire apparaitre tous les restaurant qui commence a partir de 18h00.
@@ -23,10 +21,8 @@ Résultat:
 ![[Pasted image 20230202100159.png]]
 
 B.trié les restaurtant avec leur notes du plus petit au plus grand
-```json
-
+```js
 db.resto.find({}, {name: 1, rating: 1}).sort({rating: -1})
-
 ```
 
 cette requette permet d'afficher les restaurant est de les classé par note par ordre décroissant
@@ -38,14 +34,14 @@ Index MongoDB:
 
 B. Créé un index
 
-```json
+```js
 db.resto.createIndex( { name: 1, opening_hours: 1 } )
 ```
 
 Cette requette a permis de créé un index. L'index contient les champs name et opening_hours
 
 Pour voir ci l'index a bien été créé on utilise la commande suivante:
-```json
+```js
 db.runCommand({listIndexes: "resto"})
 ```
 
@@ -59,15 +55,61 @@ La requete nous a bien renvoyé l'index que nous avons créé.
 
 Requêtes géospatiales
 
+
+dataset utilisé : locations
+
 index féospatiale
-```json
-db.resto.createIndex({ geo_shape: "2dsphere" })
-db.resto.createIndex({ "geo_shape.geometry": "2dsphere" })
+```js
+db.locations.createIndex({ location: "2dsphere" })
 ```
 
 
-```json
-db.resto.find({ geo_shape: {{$nearSphere : {$geometry : {type : "Point", coordinates : [55.2883153, -21.169296000289428]},$maxDistance : 2000}}})
-
-db.resto.find({ "geo_shape.geometry": {{ $nearSphere: { $geometry: { type: "Point", coordinates: [55.2883153, -21.169296000289428] }, $maxDistance: 2000 } } })
+```js
+db.locations.find({ location: { $near: { $geometry: { type: "Point", coordinates: [48.865770, 2.341780] }, $maxDistance: 2000 } } })
 ```
+
+Cette requete va montrer tous ce qui est a moi de 2km des coordonnées choisi.
+
+Résultat:
+![[Pasted image 20230202122824.png]]
+
+Agrégation :
+vg vbv
+```js
+db.locations.aggregate([ { $group: { _id: null, averageRating: { $avg: "$rating" } } } ])
+```
+Cette requete permet de calculer la moyenne des restaurants 
+
+Résultat
+![[Pasted image 20230202123623.png]]
+
+
+```js
+db.locations.aggregate([ { $group: { _id: "$restaurantName", totalComments: { $sum: "$numberOfComments" } } }, { $sort: { totalComments: -1 } }, { $limit: 1 } ])
+```
+
+Résultat:
+![[Pasted image 20230202124930.png]]
+
+Export:
+
+export en Json
+mongoexport --uri=mongodb+srv://Alex:VPvVFqNKEnxo4aJr@cluster0.vavbcfc.mongodb.net/EvalDB --collection=resto  --out=resto.json
+
+export en CSV
+
+export collection locations:
+```
+
+mongoexport --uri mongodb+srv://Alex:VPvVFqNKEnxo4aJr@cluster0.vavbcfc.mongodb.net/?retryWrites=true --db EvalDB --collection locations --csv --out locations.csv --fields restaurantName,location,type,coordinates,rating,numberOfRatings,numberOfComments
+
+```
+
+
+export colelction resto:
+```
+mongoexport --uri mongodb+srv://Alex:VPvVFqNKEnxo4aJr@cluster0.vavbcfc.mongodb.net/?retryWrites=true --db EvalDB --collection resto --csv --out resto.csv --fields restaurantName,location,type,coordinates,rating,numberOfRatings,numberOfComments
+```
+
+
+
