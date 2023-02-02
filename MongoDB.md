@@ -1,6 +1,6 @@
 
 
-MDP :VPvVFqNKEnxo4aJr
+MDP : VPvVFqNKEnxo4aJr
 
 Utiliser pour de la base de données
 
@@ -443,4 +443,3 @@ db.personnes.find({"interets" : "jardinage"})
 ```
 
 
-![[Pasted image 20230201151506.png]]
