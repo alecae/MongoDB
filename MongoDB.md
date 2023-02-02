@@ -1,12 +1,10 @@
 
 
-MDP : VPvVFqNKEnxo4aJr
-
 Utiliser pour de la base de données
 
-Optimiser temps d'exécution avec un Index
-
 Mongo DB  est un système de base de données
+
+Optimiser temps d'exécution avec un Index
 
 
 AVANTAGES:

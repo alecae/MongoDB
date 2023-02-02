@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Eval MongoDB.md",
+                "file": "MongoDB.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Eval MongoDB.md",
+                "file": "MongoDB.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Eval MongoDB.md"
+                "file": "MongoDB.md"
               }
             }
           }
@@ -159,10 +158,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c8d242b375e026e7",
+  "active": "6d96d962e3b8f2f3",
   "lastOpenFiles": [
-    "MongoDB.md",
     "Eval MongoDB.md",
+    "MongoDB.md",
     "Pasted image 20230201151436.png"
   ]
 }
